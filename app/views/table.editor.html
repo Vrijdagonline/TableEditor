@@ -38,26 +38,26 @@
 
     <label class="show-advanced">
         <input ng-model="showAdvanced" type="checkbox" />
-        Show advanced?
+        Toon geavanceerde opties?
     </label>
 
     <div ng-show="showAdvanced" class="advanced-options">
 
         <label ng-show="model.config.tableStyles.length > 1">
-            Table style
+            Tabel stijl
             <select ng-model="model.value.tableStyle" ng-options="style.value as style.label for style in model.config.tableStyles"></select>
         </label>
 
         <label>
             <input ng-model="model.value.useFirstRowAsHeader" type="checkbox" />
-            Use first row as header?
+            Eerste regel als header gebruiken??
         </label>
         <label>
             <input ng-model="model.value.useLastRowAsFooter" type="checkbox" />
-            Use last row as footer?
+            Laatste regel als footer gebruiken?
         </label>
         <label>
-            <input type="button" value="Clear Table" ng-click="clearTable()"/>
+            <input type="button" value="Tabel leegmaken" ng-click="clearTable()"/>
         </label>
     </div>
 </div>

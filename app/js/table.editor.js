@@ -80,7 +80,7 @@
 
     $scope.removeRow = function ($index) {
         if ($scope.canRemoveRow()) {
-            if (confirm("Are you sure you'd like to remove this row?")) {
+            if (confirm("Weet je zeker dat je deze regel wilt verwijderen?")) {
                 $scope.model.value.cells.splice($index, 1);
             }
         }
@@ -92,7 +92,7 @@
 
     $scope.removeColumn = function ($index) {
         if ($scope.canRemoveColumn()) {
-            if (confirm("Are you sure you'd like to remove this column?")) {
+            if (confirm("Weet je zeker dat je deze kolom wilt verwijderen?")) {
                 $scope.model.value.columnStylesSelected.splice($index, 1);
 
                 for (var i in $scope.model.value.cells) {
@@ -120,7 +120,7 @@
     };
 
     $scope.clearTable = function () {
-        if (confirm("Are you sure you wish to remove everything from the table?")) {
+        if (confirm("Weet je zeker dat je alle inhoud van de tabel wilt verwijderen?")) {
             $scope.model.value = defaultModel;
         }
     }
