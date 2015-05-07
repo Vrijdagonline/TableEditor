@@ -6,6 +6,7 @@
     var defaultModel = {
         useFirstRowAsHeader: false,
         useLastRowAsFooter: false,
+		makeFirstColumnBold: false,
 		showHeadertitle: false,
 		headerTitle: "",
         tableStyle: null,
