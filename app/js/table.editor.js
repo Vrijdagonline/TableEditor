@@ -6,6 +6,8 @@
     var defaultModel = {
         useFirstRowAsHeader: false,
         useLastRowAsFooter: false,
+		showHeadertitle: false,
+		headerTitle: "",
         tableStyle: null,
         columnStylesSelected: [
            null,
@@ -136,7 +138,7 @@
         //Col Style 1,col-style-1
 
         var lines = configString.split('\n');
-        var styles = [{label: "None", value: null}];
+        var styles = [{label: "Standaard", value: 'table'}];
 
         for (var i in lines) {
             var style = {};

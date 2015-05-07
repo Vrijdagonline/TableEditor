@@ -85,8 +85,24 @@
     background-color: #eee;
     border: 1px solid #ccc;
     width: 400px;
+	/* max-width: 100%; */
 }
 
+.margin-top-5px {
+margin-top: 5px;
+}
+
+.margin-top-20px {
+margin-top: 20px;
+}
+
+.bg-danger {
+  background-color: #f2dede;
+}
+
+.advanced-options-header .control-label-table {
+width: 200px;
+}
 .table-editor .show-advanced {
     padding: 10px 0;
 }

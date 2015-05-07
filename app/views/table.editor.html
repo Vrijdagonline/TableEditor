@@ -38,26 +38,41 @@
 
     <label class="show-advanced">
         <input ng-model="showAdvanced" type="checkbox" />
-        Toon geavanceerde opties?
+        Toon geavanceerde opties
     </label>
 
     <div ng-show="showAdvanced" class="advanced-options">
 
-        <label ng-show="model.config.tableStyles.length > 1">
+        <label class="control-label control-label-table" ng-show="model.config.tableStyles.length > 1">
             Tabel stijl
-            <select ng-model="model.value.tableStyle" ng-options="style.value as style.label for style in model.config.tableStyles"></select>
         </label>
+		<select ng-model="model.value.tableStyle" ng-options="style.value as style.label for style in model.config.tableStyles"></select>
 
         <label>
             <input ng-model="model.value.useFirstRowAsHeader" type="checkbox" />
-            Eerste regel als header gebruiken??
+            Eerste regel vetgedrukt maken
         </label>
         <label>
             <input ng-model="model.value.useLastRowAsFooter" type="checkbox" />
-            Laatste regel als footer gebruiken?
+            Laatste regel vetgedrukt maken
         </label>
-        <label>
-            <input type="button" value="Tabel leegmaken" ng-click="clearTable()"/>
+		
+		<label class="show-header-titel">
+			<!-- <input ng-model="showHeadertitle" type="checkbox" /> -->
+			<input ng-model="model.value.showHeadertitle" type="checkbox" />
+			Tabel Header verbergen
+		</label>
+		<div ng-hide="model.value.showHeadertitle" class="advanced-options-header">
+			<div class="form-group">
+				<label class="control-label control-label-table">
+					Header titel <small style="display:inline;">(optioneel)</small>
+				</label>
+				<input class="form-control margin-top-5px" ng-model="model.value.headerTitle" type="textbox" />
+			</div>
+		</div>
+
+        <label class="margin-top-20px">
+            <input type="button" class="btn btn-danger" value="Tabel leegmaken" ng-click="clearTable()"/>
         </label>
     </div>
 </div>

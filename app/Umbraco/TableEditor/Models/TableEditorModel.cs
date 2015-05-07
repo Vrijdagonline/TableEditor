@@ -27,6 +27,8 @@ namespace TableEditor.Models
 
         public bool UseFirstRowAsHeader { get; set; }
         public bool UseLastRowAsFooter { get; set; }
+		public bool ShowHeaderTitle { get; set; }
+        public string HeaderTitle { get; set; }
         public string TableStyle { get; set; }
         public IEnumerable<string> ColumnStylesSelected { get; set; }
         public IEnumerable<string> RowStylesSelected { get; set; }

@@ -3,6 +3,8 @@
     {
       "name": "Table Editor",
       "alias": "Imulus.TableEditor",
+	  "isParameterEditor": true,
+	  "hideLabel": true,	  
       "editor": {
         "valueType": "JSON",
         "view": "~/App_Plugins/TableEditor/views/table.editor.html"
